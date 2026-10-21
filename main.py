@@ -51,13 +51,13 @@ def fetch_box_office_data(api_key, target_dt):
 
 # 3. Streamlit Secrets에서 API 키 불러오기
 try:
-  API_KEY = st.secrets["KOBIS_KEY"]
+  API_KEY = st.secrets["15c322dbcef9ed424b4b9dfdd23448f6"]
 except Exception:
   st.error(
       "⚠️ **API 키가 설정되지 않았습니다!**\n\n"
       "Streamlit Cloud 앱 설정의 **Secrets** 메뉴에 아래와 같이 등록해 주세요.\n\n"
       "```toml\n"
-      'KOBIS_KEY = "15c322dbcef9ed424b4b9dfdd23448f6"\n'
+      'KOBIS_KEY = "여러분의_인증키"\n'
       "```"
   )
   st.stop()
